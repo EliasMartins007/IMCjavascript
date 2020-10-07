@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <img src="img/logo_teste.jpg" alt="logo" />
+    <h1>Calculadora IMC 2020</h1>
+    <br />
+    <br />
+    <h2>favor informar altura em metros e centimetros</h2>
+    <form id="formulario">
+      <fieldset>
+        <!--legend>Cálculo do IMC</legend-->
+
+        <label for="kilos">Quilos:</label>
+        <input type="text" name="quilos" id="txtQuilos" />
+
+        <label for="metros">Metros:</label>
+        <input type="text" name="metros" id="txtMetros" />
+
+        <label for="centimetros">Cm:</label>
+        <input type="text" name="centimetros" id="txtCentimetros" />
+
+        <label for="imc">resultado do seu IMC:</label>
+        <input type="text" name="imc" disabled="disabled" id="lblResultado" />
+
+        <a href="#" onclick="calcularIMC()">Calcular</a>
+        <input type="submit" value="Calcular" onclick="calcularIMC" />
+        <!-- aki chama function 06/10/2020 elias-->
+
+        <input type="submit" value="Limpar" id="btnLimpar" />
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+    <h2>link da OMS (organização mundial da saúde) OMS\Brasil</h2>
+    <div>
+      <p>
+        <a
+          href="https://www.who.int/eportuguese/countries/bra/pt/"
+          target="_blank"
+          >OMS Brasil</a
+        >
+      </p>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
