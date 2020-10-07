@@ -27,7 +27,7 @@
           <input
             type="text"
             name="quilos"
-            id="txtQuilos"
+            class="txtQuilos"
             placeholder="digite quilos"
           />
 
@@ -35,7 +35,7 @@
           <input
             type="text"
             name="metros"
-            id="txtMetros"
+            class="txtMetros"
             placeholder="digite metros"
           />
 
@@ -43,20 +43,20 @@
           <input
             type="text"
             name="centimetros"
-            id="txtCentimetros"
+            class="txtCentimetros"
             placeholder="digite centimetros"
           />
 
           <label for="imc">resultado do seu IMC:</label>
-          <input type="text" name="imc" disabled="disabled" id="lblResultado" />
-
-          <a href="#" onclick="calcularIMC()">Calcular</a>
           <input
-            type="submit"
-            value="Calcular"
-            onclick="calcularIMC()"
-            class="sub"
+            type="text"
+            name="imc"
+            disabled="disabled"
+            class="lblResultado"
           />
+
+          <a href="#" onclick="calcularImcTest()">Calcular</a>
+
           <!-- aki chama function 06/10/2020 elias-->
         </fieldset>
       </form>

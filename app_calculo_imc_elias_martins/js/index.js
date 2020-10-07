@@ -6,34 +6,19 @@ function start() {
   form.addEventListener('submit', preventSubmit);
 }
 
-// console.log('teste');
-
-function calcularImc2(metros, centimetro, peso) {
+function calcularImcTest() {
   //tentando colocar nessa função
-  var formulario = document.getElementById('formulario');
-  var alturaAoquadrado = metros + centimetro ** 2; //elevo ao quadrado a altura em colocao em uma variavel
-  var imc = alturaAoquadrado / peso;
-  //return (formulario.imc.value = imc.toFixed(2));
-  formulario.imc.value = imc.toFixed(2);
+  var FKilos = Number(document.querySelector('.txtQuilos').value);
+  var kilos = FKilos;
+  var Fmetros = Number(document.querySelector('.txtMetros').value);
+  var metros = Fmetros;
+  var Fcentimetros = Number(document.querySelector('.txtCentimetros').value);
+  var centimetros = Fcentimetros;
+  var alturaAoquadrado = (metros * 100 + centimetros) / 100;
+  var imc = kilos / alturaAoquadrado ** 2;
+  document.querySelector('.lblResultado').value = imc;
 }
 
-//teste 06/10/2020 elias
-calcularIMC = function () {
-  //var formulario = document.getElementById('formulario');
-  var formulario = document.querySelector('#formulario');
-  var kilos = +formulario.quilos.value;
-  var metros = +formulario.metros.value;
-  var centimetros = +formulario.centimetros.value;
-
-  var altura = (metros * 100 + centimetros) / 100;
-  var imc = kilos / altura ** 2;
-  formulario.imc.value = imc.toFixed(2);
-};
-
-function validar() {
-  //implementar
-}
 function preventSubmit(event) {
   event.preventSubmit();
-  //preventDefault  olhar aki
 }
