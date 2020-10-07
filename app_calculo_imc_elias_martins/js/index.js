@@ -8,14 +8,14 @@ function start() {
 
 // console.log('teste');
 
-// function calcularImc(metros, centimetro, peso) {
-//   //tentando colocar nessa função
-//   var formulario = document.getElementById('formulario');
-//   var alturaAoquadrado = metros + centimetro ** 2; //elevo ao quadrado a altura em colocao em uma variavel
-//   var imc = alturaAoquadrado / peso;
-//   //return (formulario.imc.value = imc.toFixed(2));
-//   formulario.imc.value = imc.toFixed(2);
-// }
+function calcularImc2(metros, centimetro, peso) {
+  //tentando colocar nessa função
+  var formulario = document.getElementById('formulario');
+  var alturaAoquadrado = metros + centimetro ** 2; //elevo ao quadrado a altura em colocao em uma variavel
+  var imc = alturaAoquadrado / peso;
+  //return (formulario.imc.value = imc.toFixed(2));
+  formulario.imc.value = imc.toFixed(2);
+}
 
 //teste 06/10/2020 elias
 calcularIMC = function () {
@@ -35,4 +35,5 @@ function validar() {
 }
 function preventSubmit(event) {
   event.preventSubmit();
+  //preventDefault  olhar aki
 }

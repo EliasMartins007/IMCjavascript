@@ -10,13 +10,18 @@ h1 {
   padding-left: 280px;
   position: absolute;
   left: 100px;
-  color: rgb(68, 62, 6);
+  color: rgb(75, 195, 145);
   font-size: 44px;
 }
 h2 {
   font-size: 39px;
   padding-left: 280;
-  color: blue;
+  color: rgb(22, 158, 86);
+}
+h3 {
+  font-size: 38px;
+  font-style: italic;
+  color: rgb(22, 158, 86);
 }
 .principal {
   padding-top: 50px;
