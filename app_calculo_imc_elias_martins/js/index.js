@@ -35,8 +35,4 @@ function validar() {
 }
 function preventSubmit(event) {
   event.preventSubmit();
-
-  //lblResultado
-  var lblResultado = document.querySelector('#lblResultado');
-  alert(lblResultado.value + ' calculo executado!!!');
 }
