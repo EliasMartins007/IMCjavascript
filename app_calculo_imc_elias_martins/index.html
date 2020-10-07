@@ -15,7 +15,10 @@
     <br />
     <br />
     <div class="principal">
-      <h2>favor informar altura em metros e centimetros</h2>
+      <h2>
+        favor informar altura em metros e centimetros os três campos são de
+        preechimento obrigatorio
+      </h2>
       <form id="formulario">
         <fieldset>
           <!--legend>Cálculo do IMC</legend-->
@@ -48,7 +51,12 @@
           <input type="text" name="imc" disabled="disabled" id="lblResultado" />
 
           <a href="#" onclick="calcularIMC()">Calcular</a>
-          <input type="submit" value="Calcular" onclick="calcularIMC" />
+          <input
+            type="submit"
+            value="Calcular"
+            onclick="calcularIMC"
+            class="sub"
+          />
           <!-- aki chama function 06/10/2020 elias-->
 
           <input type="submit" value="Limpar" id="btnLimpar" class="sub" />
