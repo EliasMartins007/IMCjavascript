@@ -4,7 +4,6 @@ body {
   background: #dae7d9;
   padding-left: 20px;
 }
-
 h1 {
   padding-left: 280px;
   position: absolute;
@@ -16,21 +15,9 @@ h2 {
   padding-left: 280;
   color: blue;
 }
-
-a {
-  color: darkblue;
-  cursor: pointer;
+.principal {
+  padding-top: 50px;
 }
-
 a:houver {
   color: cyan;
-}
-
-legend {
-  color: burlywood;
-  font-size: 20px;
-}
-
-.formulario {
-  display: block;
 }

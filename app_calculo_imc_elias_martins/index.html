@@ -14,59 +14,60 @@
     <h1>Calculadora IMC 2020</h1>
     <br />
     <br />
-    <h2>favor informar altura em metros e centimetros</h2>
-    <form id="formulario">
-      <fieldset>
-        <!--legend>Cálculo do IMC</legend-->
+    <div class="principal">
+      <h2>favor informar altura em metros e centimetros</h2>
+      <form id="formulario">
+        <fieldset>
+          <!--legend>Cálculo do IMC</legend-->
 
-        <label for="kilos">Quilos:</label>
-        <input
-          type="text"
-          name="quilos"
-          id="txtQuilos"
-          placeholder="digite quilos"
-        />
+          <label for="kilos">Quilos:</label>
+          <input
+            type="text"
+            name="quilos"
+            id="txtQuilos"
+            placeholder="digite quilos"
+          />
 
-        <label for="metros">Metros:</label>
-        <input
-          type="text"
-          name="metros"
-          id="txtMetros"
-          placeholder="digite metros"
-        />
+          <label for="metros">Metros:</label>
+          <input
+            type="text"
+            name="metros"
+            id="txtMetros"
+            placeholder="digite metros"
+          />
 
-        <label for="centimetros">Cm:</label>
-        <input
-          type="text"
-          name="centimetros"
-          id="txtCentimetros"
-          placeholder="digite centimetros"
-        />
+          <label for="centimetros">Cm:</label>
+          <input
+            type="text"
+            name="centimetros"
+            id="txtCentimetros"
+            placeholder="digite centimetros"
+          />
 
-        <label for="imc">resultado do seu IMC:</label>
-        <input type="text" name="imc" disabled="disabled" id="lblResultado" />
+          <label for="imc">resultado do seu IMC:</label>
+          <input type="text" name="imc" disabled="disabled" id="lblResultado" />
 
-        <a href="#" onclick="calcularIMC()">Calcular</a>
-        <input type="submit" value="Calcular" onclick="calcularIMC" />
-        <!-- aki chama function 06/10/2020 elias-->
+          <a href="#" onclick="calcularIMC()">Calcular</a>
+          <input type="submit" value="Calcular" onclick="calcularIMC" />
+          <!-- aki chama function 06/10/2020 elias-->
 
-        <input type="submit" value="Limpar" id="btnLimpar" />
-      </fieldset>
-    </form>
+          <input type="submit" value="Limpar" id="btnLimpar" class="sub" />
+        </fieldset>
+      </form>
 
-    <br />
-    <br />
-    <h2>link da OMS (organização mundial da saúde) OMS\Brasil</h2>
-    <div>
-      <p>
-        <a
-          href="https://www.who.int/eportuguese/countries/bra/pt/"
-          target="_blank"
-          >OMS Brasil</a
-        >
-      </p>
+      <br />
+      <br />
+      <h2>link da OMS (organização mundial da saúde) OMS\Brasil</h2>
+      <div>
+        <p>
+          <a
+            href="https://www.who.int/eportuguese/countries/bra/pt/"
+            target="_blank"
+            >OMS Brasil</a
+          >
+        </p>
+      </div>
     </div>
-
     <script src="./js/index.js"></script>
   </body>
 </html>
