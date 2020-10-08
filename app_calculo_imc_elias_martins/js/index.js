@@ -4,18 +4,19 @@ function start() {
   console.log('Pagina totalmente carregada');
   var form = document.querySelector('form');
   form.addEventListener('submit', preventSubmit);
+  document.querySelector('.txtQuilos').focus();
 }
 
-function calcularImcTest() {
+function calcularImc() {
   //tentando colocar nessa função
-  var FKilos = Number(document.querySelector('.txtQuilos').value);
-  var kilos = FKilos;
+  var FQuilos = Number(document.querySelector('.txtQuilos').value);
+  var Quilos = FQuilos;
   var Fmetros = Number(document.querySelector('.txtMetros').value);
   var metros = Fmetros;
   var Fcentimetros = Number(document.querySelector('.txtCentimetros').value);
   var centimetros = Fcentimetros;
   var alturaAoquadrado = (metros * 100 + centimetros) / 100;
-  var imc = kilos / alturaAoquadrado ** 2;
+  var imc = Quilos / alturaAoquadrado ** 2;
   document.querySelector('.lblResultado').value = imc.toFixed(1);
 }
 
@@ -25,18 +26,21 @@ function preventSubmit(event) {
 }
 
 function validar() {
-  //var kilos = form.quilos;
-  var kilos = document.querySelector('quilos');
-  //var metros = form.metros;
-  var metros = document.querySelector('metros');
-  //var centimetros = form.centimetros;
-  var centimetros = document.querySelector('centimetros');
+  var Quilos = document.querySelector('.txtQuilos');
+  var metros = document.querySelector('.txtMetros');
+  var centimetros = document.querySelector('.txtCentimetros');
 
-  if (kilos.value == '') {
-    alert('Preencha o campo quilos por favor!');
-    // form.quilos.focus();
-    return;
+  if (Quilos.value === '') {
+    alert('Preencha o campo Quilos por favor!');
+  } else {
+    if (metros.value === '') {
+      alert('Preencha o campo Metros por favor!');
+    } else {
+      if (centimetros.value === '') {
+        alert('Preencha o campo Centimetros por favor!');
+      } else {
+        calcularImc();
+      }
+    }
   }
-
-  calcularImcTest();
 }
