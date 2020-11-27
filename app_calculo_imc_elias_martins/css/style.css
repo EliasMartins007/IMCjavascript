@@ -10,8 +10,9 @@ h1 {
   padding-left: 280px;
   position: absolute;
   left: 100px;
-  color: rgb(75, 195, 145);
-  font-size: 44px;
+  color: rgb(101, 231, 177);
+  font-family: cursive;
+  font-size: 50px;
 }
 h2 {
   font-size: 39px;
